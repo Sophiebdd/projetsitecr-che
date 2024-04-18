@@ -1,0 +1,228 @@
+
+body {    
+    background: #fff;
+    color: #0a4f3bb1;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.nav {
+    margin-bottom: 120px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  } 
+
+.container {
+    height: 50%;
+  }
+  
+  .btn {
+    background: #7db7ab;
+    font-size: 1.70rem;
+    cursor: pointer;
+    padding: 2rem 3rem;
+    border-radius: 10rem;
+    transition: transform 300ms;
+  }
+
+  .btn:hover {
+    transform: scale(1.15);
+  }
+
+  .main {
+    background: #7db7ab ;
+    text-align: center;
+    margin-bottom: 90px;
+  }
+
+  #text {
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: justify;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;                   /*si j'enlève le flex, en réduisant la page le texte sort du bloc*/
+    justify-content: center;         /*le texte reste centré dans le bloc peu importe la réduction*/
+  }
+
+  .footer {
+    text-align: center;
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+    color: #128871;
+  }
+
+  a:hover {
+    font-weight: bold;
+  }
+
+  a:active {}
+
+  img {
+    border: #128871; 
+    border-radius: 80px;
+  }
+
+  /*page notre creche*/
+  
+  #galerie {
+    margin-bottom: 120px;
+    text-align: center;
+  }
+
+
+  .equipe {
+    text-align: center;
+    margin-bottom: 120px;
+  }
+
+  .photos {
+    text-align: center;
+    margin-bottom: 120px;
+    background: #85b4ac;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+/* page projet */
+
+  .content {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #b4e7df;
+  }
+
+  .content > div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+    margin: 10px 0;
+    text-decoration: underline;
+    place-items: center;
+  }
+
+  .div1 {
+    background: #128871;
+    order: 1;
+  }
+
+  .div2 {
+    background: linear-gradient(to bottom right, rgb(21, 49, 21), rgb(173, 173, 92));
+  }
+
+  .div3 {
+    background: #64d8c5;
+  }
+
+  .div4 {
+    background: #128871;
+  }
+
+  .div5 {
+    background: #7db7ab;
+  }
+
+  .div6 {
+    background: #6ec086;
+  }
+
+  .div7 {
+    background: #92b77d;
+  }
+  
+  .contenant {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item {
+    flex-basis: 400px;
+  }
+
+  .item1 {
+    height: 200px;
+    background: #756d1eb1;
+    flex-grow: 1;
+  }
+
+  .item2 {
+    height: 200px;
+    background: rgb(136, 89, 18, 0.5);      /*mettre au format rgb permet d'ajouter une 4eme valeur qui définit l'opacité ici 50%. Si je met opacity: 50% après, ça englobera aussi le texte, ce qui n'est pas voulu */
+  }
+
+
+
+
+
+/* page pré-inscription */
+
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #d3d3ce;
+    border-radius: 30%;
+    padding: 10px;
+    
+  }
+
+  form {
+    grid-column: 2;
+    background: rgb(125, 183, 171, 30%);
+    padding: 10px;
+  }
+
+  .address {
+    width: 336px;
+  }
+
+  input, select {
+    border-radius: 5px;
+    border: #128871 solid 3px;
+  }
+
+  input[type=text] {
+    color: #128871;
+  }
+
+  .submit {
+    background: #128871;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+  }
+
+  .submit:hover {
+    cursor: pointer;
+    animation: glowing 1300ms infinite;
+  }
+  
+  
+  @keyframes glowing {
+    0% {
+      background-color: #2ba805;
+      box-shadow: 0 0 5px #2ba805;
+    }
+    50% {
+      background-color: #49e819;
+      box-shadow: 0 0 20px #49e819;
+    }
+    100% {
+      background-color: #2ba805;
+      box-shadow: 0 0 5px #2ba805;
+    }
+  }
+  
+
+  

@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+    <head lang="fr">
+        <title>Microcrèche Les Coccinelles - Pré-inscription</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./style.css"/>
+    </head>
+
+    <!-- installer dockerdesktop? Laragon? <div class="">
+        <form (2 attributs:)action"chemin relatif vers script fichier côté back souvent php" method"POST (à privilégier surtout pour la sécurité des codes...) ou GET">
+            <input type="text" name="nom du champ (utile pour php, forme de variable, pour validation formulaire)" id="utile pour javascript, pas oblig" placeholder"petit texte grisé dans le champ">
+            <input type="number" min="0" max="100" placeholder="votre $age par ex">
+            <input type="submit" value="...">
+            <input type="reset" value="...">  
+        <form>
+        </div>-->
+
+    <body>
+        <div class="nav">
+            <a href="./main.html">
+                <div class="container">
+                    <div class="btn">Accueil
+                    </div>
+                </div>
+            </a>
+                        
+            <a href="./notrecreche.html">
+                <div class="container">
+                    <div class="btn">Notre crèche
+                    </div>
+                </div>
+            </a>
+                        
+            <a href="./leprojet.html">
+                <div class="container">
+                    <div class="btn">Le projet
+                    </div>
+                </div>
+            </a> 
+                        
+            <a href="./preinscription.html">
+                <div class="container">
+                    <div class="btn">Pré-inscription
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="form">
+            <FORM method="GET" action="./monscript.php">
+            Parent 1: <br>
+                <INPUT type="text" name="nom" placeholder="Nom">
+                <INPUT type="text" name="prenom" placeholder="Prénom(s)">
+                    <br><br>
+                <INPUT class="address" type="text" name="adresse" placeholder="Adresse">
+                    <br><br>
+                <INPUT type="Tel" name="portable" placeholder="Numéro de tél perso">
+                <INPUT type="Tel" name="pro"placeholder="Numéro de tél pro"> 
+                    <br><br>
+                    Profession:<br>
+                <select name="profession">
+                    <option value="Art">Artisan, commerçant</option>
+                    <option value="Ca">Cadre</option>
+                    <option value="Inter">Profession intermédiaire</option>
+                    <option value="Emp">Employé</option>
+                    <option value="Agr">Agriculteur, exploitant</option>
+                    <option value="Ouv">Ouvrier</option>
+                    <option value="DE">Demandeur d'emploi</option>
+                </select>
+                    <br><br>
+                <INPUT type="email" name="email"placeholder="votre e-mail">
+                    <br><br><br><br>
+           
+
+            Parent 2: <br>
+                <INPUT type="text" name="nom2" placeholder="Nom">
+                <INPUT type="text" name="prenom2" placeholder="Prénom(s)">
+                    <br><br>
+                <INPUT class="address" type="text" name="adresse2" placeholder="Adresse">
+                    <br><br>
+                <INPUT type="Tel" name="portable2" placeholder="Numéro de tél perso">
+                <INPUT type="Tel" name="pro2"placeholder="Numéro de tél pro"> 
+                    <br><br>
+                Profession:<br>
+                <select name="profession2">
+                    <option value="Agr">Agriculteur, exploitant</option>
+                    <option value="Art">Artisan, commerçant</option>
+                    <option value="Ca">Cadre</option>
+                    <option value="Inter">Profession intermédiaire</option>
+                    <option value="Emp">Employé</option>
+                    <option value="Ouv">Ouvrier</option>
+                    <option value="DE">Demandeur d'emploi</option>
+                    </select>
+                    <br><br>  
+                <INPUT type="email" name="email2"placeholder="votre e-mail">
+                    <br><br><br><br>
+
+
+            Enfant:<br>
+                <INPUT type="text" name="nomenfant" placeholder="Nom de l'enfant">
+                <INPUT type="text" name="prenomenfant" placeholder="Prénom(s) de l'enfant">
+                    <br><br>
+                Date de naissance (prévue, si à naître):<br>
+                <INPUT type="date" name="age">
+                    <br><br><br><br>
+
+            Contrat d'accueil souhaité:<br>
+                <INPUT type="radio" name="contrat" value="Régulier">
+                    <label for="regulier">Régulier</label><br>
+                <INPUT type="radio" name="contrat" value="Occasionnel">
+                    <label for="occasionnel">Occasionnel</label><br>
+                <INPUT type="radio" name="contrat" value="Urgence">
+                    <label for="urgence">Urgence</label>
+                    <br><br>
+
+                <INPUT type="checkbox" name="lundi" value="Lundicestravioli">
+                    <label for="lundi">Lundi</label><br>
+                <INPUT type="checkbox" name="mardi" value="Mardi">
+                    <label for="mardi">Mardi</label><br>
+                <INPUT type="checkbox" name="mercredi" value="Mercredi">
+                    <label for="mercredi">Mercredi</label><br>
+                <INPUT type="checkbox" name="jeudi" value="Jeudi">  
+                    <label for="jeudi">Jeudi</label><br>
+                <INPUT type="checkbox" name="vendredi" value="Vendredi">
+                    <label for="vendredi">vendredi</label>
+                    <br><br>
+
+            Date de début de contrat souhaitée:<br>
+                <INPUT type="date" name="debut">
+                    <br><br>
+
+                <INPUT type="text" name="caf" placeholder="Numéro d'allocataire">
+                    <br><br>   
+
+
+                <INPUT class="submit" type="submit" value="Envoyer">
+        </FORM>
+    </div><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer> 
+            <div class="footer">
+                <table width="100%" border="0">
+                    <tr>
+                        <td width="30%"></td>
+                        <td width="20%">20 rue Dupont, 65000 TARBES</td>
+                        <td width="10%">09.00.00.00.00</td>
+                        <td width="10%"><a href="mailto:sophie.bodard@hotmail.fr">Contact</a></td>
+                        <td width="30%"></td>
+                    </tr>
+                </table>
+            </div>
+            </footer>
+            
+    
+            <script src="./script.js"></script>
+        </body>
+    </html>   
